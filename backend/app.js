@@ -142,10 +142,12 @@ io.on("connection", (socket) => {
   });
 });
 
+const PORT = process.env.PORT || 3000;
+
 sequelize
   .sync()
   .then(() => {
-    server.listen(process.env.PORT, () => {
+    server.listen(PORT, () => {
       console.log("Server is running on port 4000");
     });
   })
