@@ -2,7 +2,7 @@ let currentPage = 1;
 let loadingMessages = false;
 var adminUsers = [];
 
-let backendapi = "";
+let backendapi = "https://groupchatapp-tawny.vercel.app";
 
 const socket = io(`${backendapi}`);
 

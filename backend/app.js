@@ -115,7 +115,7 @@ io.on("connection", (socket) => {
 
     try {
       const response = await axios.post(
-        "http://localhost:4000/api/user/message",
+        "https://groupchatapp-tawny.vercel.app//api/user/message",
         messageData,
         {
           headers: {
